@@ -1,4 +1,5 @@
 <p>run:</p>
+    <p>git clone https://github.com/hrobben/ImkerApp.git   (./[naamdir])</p>
     <p>npm install<br>
     npm run watch<br> 
     npm install -D tailwindcss postcss autoprefixer<br>
