@@ -12,4 +12,12 @@ class Post extends Model
     protected $fillable = [
         'title', 'body'
     ];
+
+    /**
+     * Get the post that owns the comment.
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
