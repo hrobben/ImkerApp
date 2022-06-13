@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1 class="text-3xl font-bold underline">
-    Hello world!
+    Welkom bij de ImkerApp!
 </h1>
 </body>
 </html>
