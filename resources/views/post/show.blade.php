@@ -1,4 +1,4 @@
-@extends('post.layout')
+@extends('layouts.app')
 
 @section('content')
 
@@ -26,7 +26,7 @@
                 </tr>
                 <tr>
                     <td>{{ $post->title }}</td>
-                    <td>{{ $post->body }}</td>
+                    <td>{!! $post->body !!}</td>
                 </tr>
             </table>
         </div>

@@ -1,4 +1,4 @@
-@extends('post.layout')
+@extends('layouts.app')
 
 @section('content')
 
@@ -6,8 +6,8 @@
         <div class="col-lg-8 margin-tb">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center mt-5">
-                        <h2>Laravel 9 CRUD Example - Nicesnippets.com</h2>
+                    <div class="mt-5">
+                        <h2>Dashboard CRUD</h2>
                     </div>
                 </div>
                 <div class="col-md-12 text-end mt-4">
@@ -37,7 +37,7 @@
                     <tr>
                         <td>{{ ++$i }}</td>
                         <td>{{ $post->title }}</td>
-                        <td>{{ $post->body }}</td>
+                        <td>{!! $post->body !!}</td>
                         <td>
                             <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
 

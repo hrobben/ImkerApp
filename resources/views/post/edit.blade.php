@@ -1,4 +1,4 @@
-@extends('post.layout')
+@extends('layouts.app')
 
 @section('content')
 
@@ -47,7 +47,7 @@
                         <br>
                         <div class="form-group">
                             <strong>Body:</strong>
-                            <textarea class="form-control" style="height:150px" name="body" placeholder="Body">{{ $post->body }}</textarea>
+                            <textarea class="ckeditor form-control" style="height:150px" name="body" placeholder="Body">{{ $post->body }}</textarea>
                         </div>
                     </div>
 
