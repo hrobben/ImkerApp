@@ -17,6 +17,10 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('body');
+            $table->foreignId(column: 'user_id')   // ik ben hier in de many kant van een ManyToOne Relatie.
+            ->constrained('user')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }
